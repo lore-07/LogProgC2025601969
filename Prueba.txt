@@ -1,0 +1,14 @@
+cd "C:\Users\hp lap\Documents\LogProgC2025601969"
+
+git config --global user.name "lore-07"
+
+git config --global user.email "loreame71@gmail.com"
+
+git init
+
+ git add .
+
+git commit -m "Primer commit: proyecto creado"
+
+git remote add origin https://github.com/lore-07/LogProgC2025601969/Parcial2.git
+
