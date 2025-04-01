@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Donassss"/>
+        <attribute name="authors" value="hp lap"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 08:55:49 p. m."/>
+        <attribute name="created" value="aHAgbGFwO0RFU0tUT1AtODZPS0VGUTsyMDI1LTAzLTI2OzA3OjQyOjAxIHAuIG0uOzMwOTg="/>
+        <attribute name="edited" value="aHAgbGFwO0RFU0tUT1AtODZPS0VGUTsyMDI1LTAzLTI2OzA4OjU1OjQ5IHAuIG0uOzI7MzIyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pdonas" type="Integer" array="False" size=""/>
+            <assign variable="pdonas" expression="10"/>
+            <declare name="cantidaddonas" type="Integer" array="False" size=""/>
+            <assign variable="cantidaddonas" expression="0"/>
+            <declare name="pagot" type="Integer" array="False" size=""/>
+            <input variable="cantidaddonas"/>
+            <if expression="cantidaddonas&gt;=50">
+                <then>
+                    <assign variable="pagot" expression="pdonas*cantidaddonas*0.8"/>
+                    <output expression="&quot;El pago total con descuento por consumir mas de 50 donas es: &quot; &amp;pagot" newline="True"/>
+                </then>
+                <else>
+                    <if expression="cantidaddonas&gt;=30">
+                        <then>
+                            <assign variable="pagot" expression="pdonas*cantidaddonas*0.9"/>
+                            <output expression="&quot;El total con descuento por consumir mas de 30 donas es: &quot; &amp;pagot" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="pagot" expression="cantidaddonas*pdonas"/>
+                            <output expression="&quot;Su total es de: &quot; &amp;pagot" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
