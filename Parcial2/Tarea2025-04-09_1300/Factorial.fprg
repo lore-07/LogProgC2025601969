@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial"/>
+        <attribute name="authors" value="mi pc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 07:23:25 "/>
+        <attribute name="created" value="bWkgcGM7REVTS1RPUC00MlUzTUE5OzIwMjUtMDQtMDg7IjA2OjA2OjU4ICI7MjY3OA=="/>
+        <attribute name="edited" value="bWkgcGM7REVTS1RPUC00MlUzTUE5OzIwMjUtMDQtMDg7IjA3OjIzOjI1ICI7NzsyNzg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="factorial" type="Integer" array="False" size=""/>
+            <assign variable="factorial" expression="1"/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="0"/>
+            <input variable="num"/>
+            <while expression="num&gt;0">
+                <assign variable="factorial" expression="factorial*num"/>
+                <output expression="num" newline="True"/>
+                <assign variable="num" expression="num-1"/>
+            </while>
+            <output expression="&quot;El factorial de tu n&#250;mero es: &quot; &amp;factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

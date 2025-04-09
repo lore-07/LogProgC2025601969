@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fibonacci"/>
+        <attribute name="authors" value="mi pc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 12:55:44 "/>
+        <attribute name="created" value="bWkgcGM7REVTS1RPUC00MlUzTUE5OzIwMjUtMDQtMDg7IjA5OjIxOjEyICI7MjY2OA=="/>
+        <attribute name="edited" value="bWkgcGM7REVTS1RPUC00MlUzTUE5OzIwMjUtMDQtMDg7IjA5OjIxOjE2ICI7MTttaSBwYztERVNLVE9QLTQyVTNNQTk7MjAyNS0wNC0wODsiMDY6MDY6NTggIjtGYWN0b3JpYWwuZnByZzs2OTcw"/>
+        <attribute name="edited" value="bWkgcGM7REVTS1RPUC00MlUzTUE5OzIwMjUtMDQtMDk7IjEyOjU1OjQ0ICI7MjI7MjgzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Real" array="False" size=""/>
+            <assign variable="num" expression="0"/>
+            <declare name="num1" type="Real" array="False" size=""/>
+            <assign variable="num1" expression="1"/>
+            <declare name="num2" type="Real" array="False" size=""/>
+            <assign variable="num2" expression="2"/>
+            <output expression="num1" newline="True"/>
+            <output expression="num2" newline="True"/>
+            <for variable="num" start="1" end="100000000000000" direction="inc" step="1">
+                <comment text="No s&#233;, profe, estoi harto"/>
+                <assign variable="num" expression="num1+num2"/>
+                <output expression="num" newline="True"/>
+                <assign variable="num1" expression="num2"/>
+                <assign variable="num2" expression="num"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
